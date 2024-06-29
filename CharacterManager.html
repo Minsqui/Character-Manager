@@ -12,26 +12,22 @@
 	<div id="ShadowWall" style="position:absolute;">
 	</div>
 	<div id="ButtonMenu" style="position:absolute;">
-		<button
-			id="DiceOpenButton"
-			class="OpenButtons"
-			onclick="OpenWindow('DiceWindow')"
-			style="position:relative;">
+		<button id="DiceOpenButton" class="OpenButtons" onclick="OpenWindow('DiceWindow')" style="position:relative;">
 			Dices</button>
 
-		<button
-		id = "InventoryOpenButton"
-		class = "OpenButtons">
-		Inventory</button>
+		<button id="InventoryOpenButton" class="OpenButtons">
+			Inventory</button>
 
-		<button
-		id = "SpellsOpenButton"
-		class = "OpenButtons">
-		Spells</button>
+		<button id="SpellsOpenButton" class="OpenButtons">
+			Spells</button>
+
+		<button id="MenuOpenButton" class="OpenButtons">
+			Menu</button>
 	</div>
 	<div id="DiceWindow" class="Windows" style="position:absolute;">
 		<div class="WindowsToolbar">
-			<button class="CloseButtons" onclick="CloseWindow('DiceWindow')">X</button>
+			<button class="CloseButtons" onclick="CloseWindow('DiceWindow')">
+				X</button>
 		</div>
 		<div id="DiceBox">
 
@@ -74,6 +70,8 @@
 		<button onclick="CountDiceSum()">Roll!</button>
 		<br>
 		<input id="DiceOutput" disabled>
+	</div>
+	<div>
 	</div>
 </body>
 <script src="script"></script>

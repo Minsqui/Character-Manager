@@ -60,6 +60,7 @@ body {
 	background-color: var(--colorsecondary);
 	border: solid 0.5vw var(--colorprimary);
 	color: var(--colortext);
+	box-shadow: inset var(--colorbackground) 0px 0px 10px;
 }
 
 .WindowsToolbar {
@@ -120,8 +121,9 @@ body {
 
 .DieBox {
 	position: relative;
-	width: 14.3%;
+	width: 10%;
 	aspect-ratio: 1/1;
+	margin: auto;
 
 	background-color: var(--colorsecondary);
 	border-left: solid var(--colortext) 0.25vw;
