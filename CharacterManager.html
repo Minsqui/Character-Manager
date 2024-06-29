@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="MainWindow">
+			<input id="CharacterName" value="Name">
+	</div>
+	<div id="ShadowWall" style="position:absolute;">
+	</div>
+	<div id="ButtonMenu" style="position:absolute;">
+		<button id="DiceOpenButton" class="OpenButtons" onclick="OpenWindow('DiceWindow')" style="position:relative;">Dices</button>
+	</div>
+	<div id="DiceWindow" class="Windows" style="position:absolute;">
+		<div class="WindowsToolbar">
+			<button class="CloseButtons" onclick="CloseWindow('DiceWindow')">X</button>
+		</div>
+		<div id="DiceBox">
+		
+			<div class="DieBox">
+				<label class="DieName">D4</label>
+				<br>
+				<input id="NumberOfD4" class="NumberOfDice" value="0">
+			</div>
+			<div class="DieBox">
+				<label class="DieName">D6</label>
+				<br>
+				<input id="NumberOfD6" class="NumberOfDice" value="0">
+			</div>
+			<div class="DieBox">
+				<label class="DieName">D8</label>
+				<br>
+				<input id="NumberOfD8" class="NumberOfDice" value="0">
+			</div>
+			<div class="DieBox">
+				<label class="DieName">D10</label>
+				<br>
+				<input id="NumberOfD10" class="NumberOfDice" value="0">			
+			</div>
+			<div class="DieBox">
+				<label class="DieName">D12</label>
+				<br>
+				<input id="NumberOfD12" class="NumberOfDice" value="0">
+			</div>
+			<div class="DieBox">
+				<label class="DieName">D20</label>
+				<br>
+				<input id="NumberOfD20" class="NumberOfDice" value="0">
+			</div>
+			<div class="DieBox">
+				<label class="DieName">D100</label>
+				<br>
+				<input id="NumberOfD100" class="NumberOfDice" value="0">
+			</div>
+		</div>
+		<button onclick="CountDiceSum()">Roll!</button>
+		<br>
+		<input id="DiceOutput" disabled>	
+	</div>
+</body>
+<script src="script"></script>
+</html>
