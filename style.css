@@ -1,164 +1,157 @@
-:root
-{
---colorbackground:#000000;
---colorprimary:darkorange;
---colorsecondary:#171717;
---colortext:#ffffff;
+:root {
+	--colorbackground: #000000;
+	--colorprimary: darkorange;
+	--colorsecondary: #171717;
+	--colortext: #ffffff;
 }
 
-body
-{
-background-color:var(--colorbackground);
+body {
+	background-color: var(--colorbackground);
 }
 
-#ShadowWall
-{
-top:0%;
-bottom:0%;
-left:0%;
-right:0%;
-z-index:1;
+#ShadowWall {
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	z-index: 1;
 
-background-color:rgb(0,0,0,0.75);
-display:none;
+	background-color: rgb(0, 0, 0, 0.75);
+	display: none;
 }
 
 /*Main*/
-#MainWindow
-{
-position:absolute;
-top:5vw;
-bottom:5vw;
-left:5vw;
-right:15vw;
+#MainWindow {
+	position: absolute;
+	top: 5vw;
+	bottom: 5vw;
+	left: 5vw;
+	right: 15vw;
 
-border:5px ridge var(--colorprimary);
-background-color:var(--colorsecondary);
+	border: 5px ridge var(--colorprimary);
+	background-color: var(--colorsecondary);
 }
 
-#CharacterName
-{
-position:absolute;
-top:1vh;
-left:10vw;
-right:10vw;
-height:5vw;
+#CharacterName {
+	position: absolute;
+	top: 1vh;
+	left: 10vw;
+	right: 10vw;
+	height: 5vw;
 
-text-align:center;
-font-size:2em;
+	text-align: center;
+	font-size: 2em;
 
-border:0px;
-border-bottom:2px ridge var(--colorprimary);
-outline:0px;
-background-color:transparent;
-color:var(--colortext);
+	border: 0px;
+	border-bottom: 2px ridge var(--colorprimary);
+	outline: 0px;
+	background-color: transparent;
+	color: var(--colortext);
 }
-#CharacterName:focus
-{}
+
+#CharacterName:focus {}
 
 /*Windows*/
-.Windows
-{
-position:absolute;
-left:5vw;
-right:5vw;
+.Windows {
+	position: absolute;
+	left: 5vw;
+	right: 5vw;
 
-background-color:var(--colorsecondary);
-border:solid 0.5vw var(--colorprimary);
-color:var(--colortext);
+	background-color: var(--colorsecondary);
+	border: solid 0.5vw var(--colorprimary);
+	color: var(--colortext);
 }
 
-.WindowsToolbar
-{
-position:relative;
-height:5vh;
-background-color:var(--colorprimary);
+.WindowsToolbar {
+	position: relative;
+	height: 5vh;
+	background-color: var(--colorprimary);
 }
 
-.CloseButtons
-{
-background-color:var(--colorsecondary);
-color:white;
-right:0%;
-top:0%;
-bottom:0%;
-aspect-ratio:1/1;
-position:absolute;
+.CloseButtons {
+	background-color: var(--colorsecondary);
+	color: white;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	aspect-ratio: 1/1;
+	position: absolute;
 }
 
 /*ButtonMenu*/
-#ButtonMenu
-{
-border-left: ridge 0px darkorange;
-top:0vw;
-right:0vw;
-width:10vh;
+#ButtonMenu {
+	border-left: ridge 0px darkorange;
+	top: 0vw;
+	right: 0vw;
+	width: 10vh;
+	display: grid;
 }
-.OpenButtons
-{
-border:0px;
-border-left:solid var(--colorprimary) 2px;
-border-bottom:solid var(--colorprimary) 2px;
-background-color:var(--colorsecondary);
-color:var(--colortext);
+
+.OpenButtons {
+	border: 0px;
+	border-left: solid var(--colorprimary) 2px;
+	border-bottom: solid var(--colorprimary) 2px;
+	aspect-ratio: 1/1 ;
+
+	background-color: var(--colorsecondary);
+	color: var(--colortext);
 }
-#DiceOpenButton
-{
-top:0;
-width:100%;
-aspect-ratio:1/1;
+
+#DiceOpenButton {
+	top: 0;
+	width: 100%;
+	aspect-ratio: 1/1;
 }
 
 /*Dice*/
-#DiceWindow
-{
-text-align:center;
-display:none;
-z-index:2;
+#DiceWindow {
+	text-align: center;
+	display: none;
+	z-index: 2;
 }
-#DiceBox
-{
-margin-top:1vh;
-position:relative;
-top:-200%;
 
-display:flex;
-}
-.DieBox
-{
-position:relative;
-width:14.3%;
-aspect-ratio:1/1;
+#DiceBox {
+	margin-top: 1vh;
+	position: relative;
+	top: -200%;
 
-background-color:var(--colorsecondary);
-border-left:solid var(--colortext) 0.25vw;
-border-right:solid var(--colortext) 0.25vw;
-padding:1%;
+	display: flex;
 }
-.NumberOfDice
-{
-width:8vw;
-}
-.DieName
-{
-position:relative;
-top:20%;
 
-color:var(--colortext);
-}
-.NumberOfDice
-{
-position:relative;
-top:25%;
+.DieBox {
+	position: relative;
+	width: 14.3%;
+	aspect-ratio: 1/1;
 
-background-color:var(--colorbackground);
-color:var(--textcolor);
-text-align:center;
-border: inset 0.5vw var(--colorsecondary);
-outline:0px;
+	background-color: var(--colorsecondary);
+	border-left: solid var(--colortext) 0.25vw;
+	border-right: solid var(--colortext) 0.25vw;
+	padding: 1%;
 }
-#DiceOutput
-{
+
+.NumberOfDice {
+	width: 8vw;
+}
+
+.DieName {
+	position: relative;
+	top: 20%;
+
+	color: var(--colortext);
+}
+
+.NumberOfDice {
+	position: relative;
+	top: 25%;
+
 	background-color: var(--colorbackground);
-	color:var(--colortext);
+	color: var(--textcolor);
+	text-align: center;
+	border: inset 0.5vw var(--colorsecondary);
+	outline: 0px;
+}
+
+#DiceOutput {
+	background-color: var(--colorbackground);
+	color: var(--colortext);
 }
