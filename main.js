@@ -22,14 +22,6 @@ function OpenWindow(id) {
     var Element = document.getElementById(id);
     Element.style.display = "block";
     document.getElementById("ShadowWall").style.display = "block";
-    /*if (Element.style.display=="none")
-    {
-        Element.style.display="block";
-    }
-    else
-    {
-        Element.style.display="none";
-    }*/
 }
 
 function CloseWindow(id) {
@@ -37,3 +29,4 @@ function CloseWindow(id) {
     Element.style.display = "none";
     document.getElementById("ShadowWall").style.display = "none";
 }
+
